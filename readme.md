@@ -21,14 +21,32 @@ $ bundle install
 
 Gemfileを編集
 ```
-gem "minima", "~> 2.0", github: "jekyll/minima"
+gem "minima", github: "jekyll/minima"
 ```
 \_config.ymlを編集
 ```
 plugins:
   - jekyll-remote-theme
+
 remote-theme: jekyll/minima
 ```
 これで再度確認する。(ローカルで確認しようとしたら`bundle install`せよと警告が出たので実行する。)  
-ローカルで実行すると少し見え方が変わった。（フッターとかボディ、フォントが変わった気がする）
+ローカルで実行すると少し見え方が変わった。（フッターとかボディ、フォントが変わった気がする）  
+→変化はなし。
 
+確認したところjekyllのバージョンがふるいみたい。
+```
+$ bundle exec jekyll -v
+3.9.2
+```
+最新は`4.3.1`なのでアップデートする。
+```
+$ gem update jekyll
+```
+これで最新になったとりあえず作り直す。
+
+```
+$ jekyll -v
+jekyll 4.3.1
+```
+一応、上記の修正も加えておく。
