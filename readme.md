@@ -49,4 +49,12 @@ $ gem update jekyll
 $ jekyll -v
 jekyll 4.3.1
 ```
-一応、上記の修正も加えておく。
+一応、上記の修正も加えておく。  
+変化はなし。
+
+以下を読んでいて、プラグインを書いたがGemfileが変わっていないことに気づいたので追加。
+> - [https://talk.jekyllrb.com/t/unclear-how-to-access-the-gemfile-on-github-pages/7425](https://talk.jekyllrb.com/t/unclear-how-to-access-the-gemfile-on-github-pages/7425)  
+
+```
+gem 'jekyll-remote-theme', '~> 0.4.3'
+```
